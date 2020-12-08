@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+				
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Xcho™</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="xcho155.github.io/web">Hone</a></li>
+        <li><a href="https://youtube.com/channel/UC75_tu5NApOU5Qf8e26CpWw">YouTube</a></li>
+        <li><a href="https://www.royale2.github.io/game">My Games</a></li>
+        <li><a href="https://instagram.com/x_kurghinyan?igshid=1pg0ei425zgwy">Instagram</a></li>
+        <li><a href="https://instagram.com/martakan.royale_official?igshid=ge9z4sjb6fea">Game Instagram</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner"></div>
+  <div class="about">
+    <div class="content">
+      <div class="title">My YouTube Channel </div>
+      <p><iframe src="https://www.youtube.com/embed/D5jT4rrBwU0 "></iframe></p>
+      <p><iframe src ="https://youtube.com/embed/anSeWFQBtxA "></iframe></p>
+      <p>Բարև բոլորին :<br> <a href ="https://youtube.com/channel/UC75_tu5NApOU5Qf8e26CpWw">Հետևյալ յութուբյան ալիքը</a> բացվել է տարբեր հոլովակների համար, մասնավորապես ՎԵԲ ծրագրավորման հոլովակների համար:<br>Ալիքին կարող եք նպաստել միայն բաժանորդագրվելով:</p>
+      <p>Ալիքում ավելացվում են տարբեր հոլովակներ, .</p>
+      <p>Ալիքը ունի հովանավորներ որոնց նույնպես կարող եք բաժանորդագրվել
+      <br><ul class="channel">
+      				<li><a href ="https://youtube.com/channel/UC53-CYq9zwWs81bU2Vz3O5w">Amour Eternel</a></li>
+      					<li><a href ="https://youtube.com/channel/UCUbwbQdv_IhnWlsnd2KFOXQ">For You</a></li>
+      						<li><a href ="https://youtube.com/c/OnlyYou2005">only you</a></li>
+      							<li><a href ="https://youtube.com/channel/UCtXd19pxk8sEnVGjCyWMsRg">WORLD OF DREAMS</a></li>
+      							<li><a href ="https://youtube.com/channel/UCwVtkvikbmSx6Tf5wOreIeA">Dream_Love</a></li>
+      					<li><a href ="https://youtube.com/channel/UC9DZt9y37AywOu5m3Bm07Sg">Your *_* Story_1406 </a></li>
+      						<li><a href ="https://youtube.com/channel/UCaE3BcQc6tzCLtksY8LQ99Q">WORLD OF Stars </a></li>
+      						<li><a href ="https://youtube.com/channel/UCH9E0Xq81aM9yvofWAufEyQ">EgorKreed__my_world</a></li>
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
